@@ -1,0 +1,131 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    float: left;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+/* Estilo para a navegação suave */
+section {
+    scroll-margin-top: 60px; /* Para compensar a altura do header */
+}
+
+/* Estilos para seções específicas */
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about, .services, .contact {
+    padding: 80px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form input, .contact form textarea {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact form textarea {
+    height: 150px;
+}
+
+.contact form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background: #555;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
